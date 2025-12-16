@@ -1,0 +1,16 @@
+[
+  {
+    "id": "GenAI",
+    "title": "GenAI course",
+    "description": "Learn GenAI",
+    "thumbnail": "https://...",
+    "author": "Vinod",
+    "tags": ["React"],
+    "repository": {
+      "owner": "vinod-seth",
+      "name": "GenAI",
+      "branch": "main"
+    },
+    "chapters": []
+  }
+]
