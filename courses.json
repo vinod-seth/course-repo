@@ -1,30 +1,55 @@
 [
   {
-    "id": "GenAI",
-    "title": "GenAI course",
-    "description": "Learn GenAI",
-    "thumbnail": "https://...",
-    "author": "Vinod",
-    "tags": ["Gen AI"],
-    "repository": {
-      "owner": "vinod-seth",
-      "name": "GenAI",
-      "branch": "main"
-    },
-    "chapters": []
+    "id": "data-science",
+    "category": "Data Science using Python",
+    "courses": [
+      {
+        "id": "python-basics",
+        "title": "Python Basics",
+        "description": "Introduction to Python programming for data science, NumPy, and Pandas.",
+        "thumbnail": "https://...",
+        "author": "Vinod",
+        "tags": ["Python", "Data Science"],
+        "repository": {
+          "owner": "vinod-seth",
+          "name": "python-basics",
+          "branch": "main"
+        }
+      }
+    ]
   },
   {
-    "id": "PythonBasics",
-    "title": "Data Science using Python",
-    "description": "Learn Python Basics",
-    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    "author": "Vinod",
-    "tags": ["Python"],
-    "repository": {
-      "owner": "vinod-seth",
-      "name": "PythonBasics",
-      "branch": "main"
-    },
-    "chapters": []
+    "id": "gen-ai",
+    "category": "Gen AI",
+    "courses": [
+      {
+        "id": "GenAI",
+        "title": "GenAI course",
+        "description": "Learn Generative AI engineering and prompt engineering.",
+        "thumbnail": "/genai_thumbnail.png",
+        "author": "Vinod",
+        "tags": ["GenAI", "AI"],
+        "repository": {
+          "owner": "vinod-seth",
+          "name": "GenAI",
+          "branch": "main"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cloud",
+    "category": "Cloud",
+    "courses": []
+  },
+  {
+    "id": "devops",
+    "category": "DevOps",
+    "courses": []
+  },
+  {
+    "id": "ai-ml",
+    "category": "AI/ML",
+    "courses": []
   }
 ]
