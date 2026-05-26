@@ -3,18 +3,18 @@
     "id": "azure",
     "title": "Azure",
     "type": "subcategory",
-    "configFile": "azure.json"
+    "configFile": "config/cloud/azure.json"
   },
   {
     "id": "aws",
     "title": "AWS",
     "type": "subcategory",
-    "configFile": "aws.json"
+    "configFile": "config/cloud/aws.json"
   },
   {
     "id": "gcp",
     "title": "GCP",
     "type": "subcategory",
-    "configFile": "gcp.json"
+    "configFile": "config/cloud/gcp.json"
   }
 ]

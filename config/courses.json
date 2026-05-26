@@ -3,18 +3,18 @@
     "id": "all-courses",
     "title": "All Courses",
     "type": "navigation",
-    "configFile": "categories.json"
+    "configFile": "config/categories.json"
   },
   {
     "id": "poc",
     "title": "POC",
     "type": "navigation",
-    "configFile": "pocs.json"
+    "configFile": "config/pocs.json"
   },
   {
     "id": "blogs",
     "title": "Blogs",
     "type": "navigation",
-    "configFile": "blogs.json"
+    "configFile": "config/blogs.json"
   }
 ]

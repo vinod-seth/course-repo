@@ -3,12 +3,12 @@
     "id": "cloud",
     "title": "Cloud",
     "type": "category",
-    "configFile": "cloud.json"
+    "configFile": "config/cloud/cloud.json"
   },
   {
     "id": "data-science",
     "title": "Data Science",
     "type": "category",
-    "configFile": "data-science.json"
+    "configFile": "config/data-science/data-science.json"
   }
 ]

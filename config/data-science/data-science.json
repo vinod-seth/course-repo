@@ -3,12 +3,12 @@
     "id": "ds-python",
     "title": "Data Science using Python",
     "type": "subcategory",
-    "configFile": "data-science-python.json"
+    "configFile": "config/data-science/python.json"
   },
   {
     "id": "ds-r",
     "title": "Data Science using R",
     "type": "subcategory",
-    "configFile": "data-science-r.json"
+    "configFile": "config/data-science/r.json"
   }
 ]
