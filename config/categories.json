@@ -10,5 +10,11 @@
     "title": "Data Science",
     "type": "category",
     "configFile": "config/data-science/data-science.json"
+  },
+  {
+    "id": "gen-ai-cat",
+    "title": "GenAI",
+    "type": "category",
+    "configFile": "config/gen-ai/gen-ai.json"
   }
 ]
