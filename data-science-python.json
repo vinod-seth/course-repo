@@ -2,6 +2,7 @@
   {
     "id": "ds-python-basics",
     "title": "Python Basics",
+    "type": "course",
     "description": "Intro to Python data structures, syntax, and coding basics.",
     "author": "Alex Chen",
     "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
@@ -15,7 +16,8 @@
   {
     "id": "ds-python-etl",
     "title": "ETL Processes",
-    "description": "Learn to build data pipelines using Pandas, PostgreSQL, and airflow.",
+    "type": "course",
+    "description": "Learn to build data pipelines using Pandas, PostgreSQL, and Airflow.",
     "author": "Alex Chen",
     "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
     "tags": ["Python", "ETL", "Pipelines"],
