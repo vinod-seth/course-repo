@@ -1,0 +1,14 @@
+[
+  {
+    "id": "cloud",
+    "title": "Cloud",
+    "type": "category",
+    "configFile": "cloud.json"
+  },
+  {
+    "id": "data-science",
+    "title": "Data Science",
+    "type": "category",
+    "configFile": "data-science.json"
+  }
+]

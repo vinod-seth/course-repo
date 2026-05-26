@@ -1,55 +1,20 @@
 [
   {
-    "id": "data-science",
-    "category": "Data Science using Python",
-    "courses": [
-      {
-        "id": "python-basics",
-        "title": "Python Basics",
-        "description": "Introduction to Python programming for data science, NumPy, and Pandas.",
-        "thumbnail": "https://...",
-        "author": "Vinod",
-        "tags": ["Python", "Data Science"],
-        "repository": {
-          "owner": "vinod-seth",
-          "name": "python-basics",
-          "branch": "main"
-        }
-      }
-    ]
+    "id": "all-courses",
+    "title": "All Courses",
+    "type": "navigation",
+    "configFile": "categories.json"
   },
   {
-    "id": "gen-ai",
-    "category": "Gen AI",
-    "courses": [
-      {
-        "id": "GenAI",
-        "title": "GenAI course",
-        "description": "Learn Generative AI engineering and prompt engineering.",
-        "thumbnail": "/genai_thumbnail.png",
-        "author": "Vinod",
-        "tags": ["GenAI", "AI"],
-        "repository": {
-          "owner": "vinod-seth",
-          "name": "GenAI",
-          "branch": "main"
-        }
-      }
-    ]
+    "id": "poc",
+    "title": "POC",
+    "type": "navigation",
+    "configFile": "pocs.json"
   },
   {
-    "id": "cloud",
-    "category": "Cloud",
-    "courses": []
-  },
-  {
-    "id": "devops",
-    "category": "DevOps",
-    "courses": []
-  },
-  {
-    "id": "ai-ml",
-    "category": "AI/ML",
-    "courses": []
+    "id": "blogs",
+    "title": "Blogs",
+    "type": "navigation",
+    "configFile": "blogs.json"
   }
 ]

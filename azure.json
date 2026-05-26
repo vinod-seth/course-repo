@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cloud-azure-ai",
+    "title": "Azure AI",
+    "description": "Implement cognitive services, Azure OpenAI, and custom AI pipelines.",
+    "author": "Sophia Lin",
+    "thumbnail": "/genai_thumbnail.png",
+    "tags": ["Azure", "AI", "Machine Learning"],
+    "repository": {
+      "owner": "vinod-seth",
+      "name": "azure-ai-content",
+      "branch": "main"
+    }
+  },
+  {
+    "id": "cloud-azure-dev",
+    "title": "Azure Developer",
+    "description": "Master Azure compute, app configuration, databases, and monitoring.",
+    "author": "John Doe",
+    "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98aedd07871?w=800&q=80",
+    "tags": ["Azure", "Cloud Infrastructure"],
+    "repository": {
+      "owner": "vinod-seth",
+      "name": "azure-dev-content",
+      "branch": "main"
+    }
+  }
+]
