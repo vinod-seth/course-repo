@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cloud",
+    "title": "Cloud",
+    "type": "category",
+    "configFile": "config/cloud/cloud.json"
+  },
+  {
+    "id": "data-science",
+    "title": "Data Science",
+    "type": "category",
+    "configFile": "config/data-science/data-science.json"
+  },
+  {
+    "id": "gen-ai-cat",
+    "title": "GenAI",
+    "type": "category",
+    "configFile": "config/gen-ai/gen-ai.json"
+  },
+  {
+    "id": "devops",
+    "title": "DevOps",
+    "type": "category",
+    "configFile": "config/devops/devops.json"
+  }
+]
