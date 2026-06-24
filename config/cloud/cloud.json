@@ -1,0 +1,20 @@
+[
+  {
+    "id": "azure",
+    "title": "Azure",
+    "type": "subcategory",
+    "configFile": "config/cloud/azure.json"
+  },
+  {
+    "id": "aws",
+    "title": "AWS",
+    "type": "subcategory",
+    "configFile": "config/cloud/aws.json"
+  },
+  {
+    "id": "gcp",
+    "title": "GCP",
+    "type": "subcategory",
+    "configFile": "config/cloud/gcp.json"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "all-courses",
+    "title": "All Courses",
+    "type": "navigation",
+    "configFile": "config/categories.json"
+  },
+  {
+    "id": "poc",
+    "title": "POC",
+    "type": "navigation",
+    "configFile": "config/pocs.json"
+  },
+  {
+    "id": "blogs",
+    "title": "Blogs",
+    "type": "navigation",
+    "configFile": "config/blogs.json"
+  }
+]
