@@ -1,0 +1,8 @@
+[
+  {
+    "id": "devops-fundamentals",
+    "title": "DevOps Fundamentals",
+    "type": "subcategory",
+    "configFile": "config/devops/devops-fundamentals.json"
+  }
+]
