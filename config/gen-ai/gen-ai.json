@@ -1,8 +1,8 @@
 [
   {
-    "id": "prompt-engineering",
-    "title": "Prompt Engineering",
+    "id": "slm-development",
+    "title": "SLM Development",
     "type": "subcategory",
-    "configFile": "config/gen-ai/prompt-engineering.json"
+    "configFile": "config/gen-ai/slm-development.json"
   }
 ]

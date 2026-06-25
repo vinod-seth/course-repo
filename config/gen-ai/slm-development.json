@@ -1,0 +1,27 @@
+[
+  {
+    "id": "slm-development-course",
+    "title": "Small Language Model Training: A Beginner's Guide",
+    "type": "course",
+    "description": "A beginner-friendly course on training and fine-tuning Small Language Models (SLMs) using Python, Hugging Face Transformers, PyTorch, and PEFT/LoRA. No prior deep learning experience required.",
+    "author": "Vinod Seth",
+    "thumbnail": "https://raw.githubusercontent.com/vinod-seth/slm-development/main/thumbnail.png",
+    "tags": [
+      "SLM",
+      "Small Language Models",
+      "Model Training",
+      "Hugging Face",
+      "NLP",
+      "Fine-Tuning",
+      "Transformers",
+      "PEFT",
+      "Generative AI",
+      "Python"
+    ],
+    "repository": {
+      "owner": "vinod-seth",
+      "name": "slm-development",
+      "branch": "main"
+    }
+  }
+]
