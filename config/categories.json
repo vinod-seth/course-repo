@@ -22,11 +22,5 @@
     "title": "DevOps",
     "type": "category",
     "configFile": "config/devops/devops.json"
-  },
-  {
-    "id": "gen-ai",
-    "title": "Generative AI",
-    "type": "category",
-    "configFile": "config/gen-ai/gen-ai.json"
   }
 ]
