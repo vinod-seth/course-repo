@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Prompt Engineering Mastery",
   "domain": "Generative AI",
   "tech_stack": [
@@ -13,110 +13,109 @@
     "Basic AI understanding"
   ],
   "estimated_hours": 6,
-  "version": "1.0",
+  "version": "1.1",
   "curriculum": [
     {
       "module_id": "module_01",
-      "title": "Foundations of Prompt Engineering",
+      "title": "Prompt Engineering Complete Course",
       "lessons": [
         {
-          "id": "overview",
-          "title": "Course Overview",
+          "id": "00-course-overview",
+          "title": "00 Course Overview",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/00-course-overview.mdx"
+            "mdx": "tutorial/00-course-overview.mdx",
+            "notebook": "tutorial/00-course-overview.ipynb"
           }
         },
         {
-          "id": "under_the_hood",
-          "title": "Under the Hood of LLMs",
+          "id": "01-under-the-hood",
+          "title": "01 Under The Hood",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/01-under-the-hood.mdx"
+            "mdx": "tutorial/01-under-the-hood.mdx",
+            "notebook": "tutorial/01-under-the-hood.ipynb"
           }
         },
         {
-          "id": "anatomy_perfect_prompt",
-          "title": "Anatomy of a Perfect Prompt",
+          "id": "02-anatomy-perfect-prompt",
+          "title": "02 Anatomy Perfect Prompt",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/02-anatomy-perfect-prompt.mdx"
-          }
-        }
-      ]
-    },
-    {
-      "module_id": "module_02",
-      "title": "Advanced Prompting Techniques",
-      "lessons": [
-        {
-          "id": "few_shot",
-          "title": "Few-Shot Prompting",
-          "defaultMode": "mdx",
-          "modes": {
-            "mdx": "tutorial/03-few-shot-prompting.mdx"
+            "mdx": "tutorial/02-anatomy-perfect-prompt.mdx",
+            "notebook": "tutorial/02-anatomy-perfect-prompt.ipynb"
           }
         },
         {
-          "id": "reasoned_prompting",
-          "title": "Reasoned Prompting & Chain of Thought",
+          "id": "03-few-shot-prompting",
+          "title": "03 Few Shot Prompting",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/04-reasoned-prompting.mdx"
+            "mdx": "tutorial/03-few-shot-prompting.mdx",
+            "notebook": "tutorial/03-few-shot-prompting.ipynb"
           }
         },
         {
-          "id": "rag_prompting",
-          "title": "RAG Prompting Strategies",
+          "id": "04-reasoned-prompting",
+          "title": "04 Reasoned Prompting",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/04b-rag-prompting.mdx"
+            "mdx": "tutorial/04-reasoned-prompting.mdx",
+            "notebook": "tutorial/04-reasoned-prompting.ipynb"
           }
         },
         {
-          "id": "delimiters_guardrails",
-          "title": "Delimiters and Guardrails",
+          "id": "04b-rag-prompting",
+          "title": "04B Rag Prompting",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/05-delimiters-guardrails.mdx"
-          }
-        }
-      ]
-    },
-    {
-      "module_id": "module_03",
-      "title": "System Integration & Capstone",
-      "lessons": [
-        {
-          "id": "programmatic_outputs",
-          "title": "Programmatic Outputs & JSON Structuring",
-          "defaultMode": "mdx",
-          "modes": {
-            "mdx": "tutorial/06-programmatic-outputs.mdx"
+            "mdx": "tutorial/04b-rag-prompting.mdx",
+            "notebook": "tutorial/04b-rag-prompting.ipynb"
           }
         },
         {
-          "id": "meta_chaining",
-          "title": "Meta-Prompting and Agent Chaining",
+          "id": "05-delimiters-guardrails",
+          "title": "05 Delimiters Guardrails",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/07-meta-chaining.mdx"
+            "mdx": "tutorial/05-delimiters-guardrails.mdx",
+            "notebook": "tutorial/05-delimiters-guardrails.ipynb"
           }
         },
         {
-          "id": "eval_iteration",
-          "title": "Evaluation and Iterative Improvement",
+          "id": "06-programmatic-outputs",
+          "title": "06 Programmatic Outputs",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/08-evaluation-iteration.mdx"
+            "mdx": "tutorial/06-programmatic-outputs.mdx",
+            "notebook": "tutorial/06-programmatic-outputs.ipynb"
           }
         },
         {
-          "id": "capstone",
-          "title": "Capstone Project",
+          "id": "07-meta-chaining",
+          "title": "07 Meta Chaining",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/09-capstone-project.mdx"
+            "mdx": "tutorial/07-meta-chaining.mdx",
+            "notebook": "tutorial/07-meta-chaining.ipynb"
+          }
+        },
+        {
+          "id": "08-evaluation-iteration",
+          "title": "08 Evaluation Iteration",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/08-evaluation-iteration.mdx",
+            "notebook": "tutorial/08-evaluation-iteration.ipynb"
+          }
+        },
+        {
+          "id": "09-capstone-project",
+          "title": "09 Capstone Project",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/09-capstone-project.mdx",
+            "notebook": "tutorial/09-capstone-project.ipynb"
           }
         }
       ]
