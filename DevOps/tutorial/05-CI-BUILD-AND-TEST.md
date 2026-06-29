@@ -1,5 +1,8 @@
 # Module 5: CI — Build & Test
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/05-CI-BUILD-AND-TEST.md)
+
+
 ## Module Overview
 - **Concept Core:** 75 min | **Hands-On Extension:** 75 min + Lab (120 min)
 - **Real-World Scenarios:** FastCart build optimization; TenantHub test parallelization

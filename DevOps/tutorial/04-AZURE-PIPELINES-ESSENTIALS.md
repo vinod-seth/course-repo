@@ -1,5 +1,8 @@
 # Module 4: Azure Pipelines Essentials
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/04-AZURE-PIPELINES-ESSENTIALS.md)
+
+
 ## Module Overview
 - **Concept Core:** 60 min | **Hands-On Extension:** 60 min + Lab (90 min)
 - **Real-World Scenarios:** FastCart enterprise deployment; TenantHub multi-stage rollout

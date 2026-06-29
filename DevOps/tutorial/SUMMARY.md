@@ -1,5 +1,8 @@
 # 📊 Course Generation Summary
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/SUMMARY.md)
+
+
 ## ✅ Deliverables Completed
 
 ### Core Documentation

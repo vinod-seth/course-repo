@@ -1,5 +1,8 @@
 # Module 11: Scaling & Real-World Patterns
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/11-SCALING-PATTERNS-12-CAPSTONE.md)
+
+
 ## Module Overview
 - **Concept Core:** 75 min | **Hands-On Extension:** 75 min + Optional labs
 - **Real-World Scenarios:** Monorepo vs. Polyrepo, multi-team coordination, cost optimization

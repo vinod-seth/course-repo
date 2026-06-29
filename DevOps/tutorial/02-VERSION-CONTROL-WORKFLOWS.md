@@ -1,5 +1,8 @@
 # Module 2: Version Control Workflows & Branch Policies
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/02-VERSION-CONTROL-WORKFLOWS.md)
+
+
 ## Module Overview
 - **Concept Core:** 60 min | **Hands-On Extension:** 60 min + Lab (60 min)
 - **Real-World Scenarios:** E-commerce: Feature branch protection; SaaS: Multi-tenant deployment coordination

@@ -1,5 +1,8 @@
 # DevOps Mastery: GitHub + Azure DevOps — Complete Course
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/00-COURSE-OVERVIEW.md)
+
+
 ## Course At A Glance
 
 This course teaches modern DevOps practices through **GitHub** and **Azure DevOps** — the tools driving enterprise CI/CD, release automation, and operational excellence. The course is **intentionally dual-track** so that business stakeholders can understand the *why* and *what*, while technical practitioners can master the *how*.

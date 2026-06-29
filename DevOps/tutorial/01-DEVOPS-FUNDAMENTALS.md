@@ -1,5 +1,8 @@
 # Module 1: DevOps Fundamentals
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/01-DEVOPS-FUNDAMENTALS.md)
+
+
 ## Module Overview
 - **Concept Core:** 45 min | **Hands-On Extension:** Self-study
 - **Real-World Scenarios:** E-commerce checkout optimization; SaaS feature rollout

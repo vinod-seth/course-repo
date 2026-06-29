@@ -1,5 +1,8 @@
 # Module 6: CD — Deployment Strategies
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/06-CD-DEPLOYMENT-STRATEGIES.md)
+
+
 ## Module Overview
 - **Concept Core:** 75 min | **Hands-On Extension:** 75 min + Lab (120 min)
 - **Real-World Scenarios:** FastCart blue-green deployments; TenantHub canary rollouts

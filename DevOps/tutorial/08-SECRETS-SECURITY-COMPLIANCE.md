@@ -1,5 +1,8 @@
 # Module 8: Secrets, Security & Compliance
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/08-SECRETS-SECURITY-COMPLIANCE.md)
+
+
 ## Module Overview
 - **Concept Core:** 90 min | **Hands-On Extension:** 90 min + Lab (120 min)
 - **Real-World Scenarios:** FastCart payment API secrets; TenantHub HIPAA compliance

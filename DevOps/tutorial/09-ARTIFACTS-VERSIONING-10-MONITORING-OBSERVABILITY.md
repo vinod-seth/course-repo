@@ -1,5 +1,8 @@
 # Module 9: Artifacts & Versioning
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinod-seth/course-repo/blob/main/tutorial/09-ARTIFACTS-VERSIONING-10-MONITORING-OBSERVABILITY.md)
+
+
 ## Module Overview
 - **Concept Core:** 60 min | **Hands-On Extension:** 60 min + Lab (90 min)
 - **Real-World Scenarios:** FastCart Docker versioning; TenantHub NuGet feed management
