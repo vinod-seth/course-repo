@@ -25,7 +25,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/00-course-overview.mdx",
-            "notebook": "tutorial/00-course-overview.ipynb"
+            "notebook": "tutorial/00-course-overview.ipynb",
+            "interview": "tutorial/00-course-overview_interview_questions.json"
           }
         },
         {
@@ -34,7 +35,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/01-under-the-hood.mdx",
-            "notebook": "tutorial/01-under-the-hood.ipynb"
+            "notebook": "tutorial/01-under-the-hood.ipynb",
+            "interview": "tutorial/01-under-the-hood_interview_questions.json"
           }
         },
         {
@@ -43,7 +45,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/02-anatomy-perfect-prompt.mdx",
-            "notebook": "tutorial/02-anatomy-perfect-prompt.ipynb"
+            "notebook": "tutorial/02-anatomy-perfect-prompt.ipynb",
+            "interview": "tutorial/02-anatomy-perfect-prompt_interview_questions.json"
           }
         },
         {
@@ -52,7 +55,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/03-few-shot-prompting.mdx",
-            "notebook": "tutorial/03-few-shot-prompting.ipynb"
+            "notebook": "tutorial/03-few-shot-prompting.ipynb",
+            "interview": "tutorial/03-few-shot-prompting_interview_questions.json"
           }
         },
         {
@@ -61,7 +65,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/04-reasoned-prompting.mdx",
-            "notebook": "tutorial/04-reasoned-prompting.ipynb"
+            "notebook": "tutorial/04-reasoned-prompting.ipynb",
+            "interview": "tutorial/04-reasoned-prompting_interview_questions.json"
           }
         },
         {
@@ -70,7 +75,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/04b-rag-prompting.mdx",
-            "notebook": "tutorial/04b-rag-prompting.ipynb"
+            "notebook": "tutorial/04b-rag-prompting.ipynb",
+            "interview": "tutorial/04b-rag-prompting_interview_questions.json"
           }
         },
         {
@@ -79,7 +85,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/05-delimiters-guardrails.mdx",
-            "notebook": "tutorial/05-delimiters-guardrails.ipynb"
+            "notebook": "tutorial/05-delimiters-guardrails.ipynb",
+            "interview": "tutorial/05-delimiters-guardrails_interview_questions.json"
           }
         },
         {
@@ -88,7 +95,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/06-programmatic-outputs.mdx",
-            "notebook": "tutorial/06-programmatic-outputs.ipynb"
+            "notebook": "tutorial/06-programmatic-outputs.ipynb",
+            "interview": "tutorial/06-programmatic-outputs_interview_questions.json"
           }
         },
         {
@@ -97,7 +105,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/07-meta-chaining.mdx",
-            "notebook": "tutorial/07-meta-chaining.ipynb"
+            "notebook": "tutorial/07-meta-chaining.ipynb",
+            "interview": "tutorial/07-meta-chaining_interview_questions.json"
           }
         },
         {
@@ -106,7 +115,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/08-evaluation-iteration.mdx",
-            "notebook": "tutorial/08-evaluation-iteration.ipynb"
+            "notebook": "tutorial/08-evaluation-iteration.ipynb",
+            "interview": "tutorial/08-evaluation-iteration_interview_questions.json"
           }
         },
         {
@@ -115,7 +125,8 @@
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/09-capstone-project.mdx",
-            "notebook": "tutorial/09-capstone-project.ipynb"
+            "notebook": "tutorial/09-capstone-project.ipynb",
+            "interview": "tutorial/09-capstone-project_interview_questions.json"
           }
         }
       ]

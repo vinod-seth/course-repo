@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "DevOps & CI/CD Mastery",
   "domain": "DevOps",
   "tech_stack": [
@@ -25,7 +25,8 @@
           "title": "Course Overview",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/00-COURSE-OVERVIEW.md"
+            "mdx": "tutorial/00-COURSE-OVERVIEW.md",
+            "interview": "tutorial/00-COURSE-OVERVIEW_interview_questions.json"
           }
         },
         {
@@ -33,7 +34,8 @@
           "title": "DevOps Fundamentals",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/01-DEVOPS-FUNDAMENTALS.md"
+            "mdx": "tutorial/01-DEVOPS-FUNDAMENTALS.md",
+            "interview": "tutorial/01-DEVOPS-FUNDAMENTALS_interview_questions.json"
           }
         },
         {
@@ -41,7 +43,8 @@
           "title": "Version Control Workflows",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/02-VERSION-CONTROL-WORKFLOWS.md"
+            "mdx": "tutorial/02-VERSION-CONTROL-WORKFLOWS.md",
+            "interview": "tutorial/02-VERSION-CONTROL-WORKFLOWS_interview_questions.json"
           }
         }
       ]
@@ -55,7 +58,8 @@
           "title": "GitHub Actions Essentials",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/03-GITHUB-ACTIONS-ESSENTIALS.md"
+            "mdx": "tutorial/03-GITHUB-ACTIONS-ESSENTIALS.md",
+            "interview": "tutorial/03-GITHUB-ACTIONS-ESSENTIALS_interview_questions.json"
           }
         },
         {
@@ -63,7 +67,8 @@
           "title": "Azure Pipelines Essentials",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/04-AZURE-PIPELINES-ESSENTIALS.md"
+            "mdx": "tutorial/04-AZURE-PIPELINES-ESSENTIALS.md",
+            "interview": "tutorial/04-AZURE-PIPELINES-ESSENTIALS_interview_questions.json"
           }
         },
         {
@@ -71,7 +76,8 @@
           "title": "CI Build and Test Automation",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/05-CI-BUILD-AND-TEST.md"
+            "mdx": "tutorial/05-CI-BUILD-AND-TEST.md",
+            "interview": "tutorial/05-CI-BUILD-AND-TEST_interview_questions.json"
           }
         },
         {
@@ -79,7 +85,8 @@
           "title": "CD Deployment Strategies",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/06-CD-DEPLOYMENT-STRATEGIES.md"
+            "mdx": "tutorial/06-CD-DEPLOYMENT-STRATEGIES.md",
+            "interview": "tutorial/06-CD-DEPLOYMENT-STRATEGIES_interview_questions.json"
           }
         }
       ]
@@ -93,7 +100,8 @@
           "title": "Environments and Approval Gates",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/07-ENVIRONMENTS-AND-APPROVAL-GATES.md"
+            "mdx": "tutorial/07-ENVIRONMENTS-AND-APPROVAL-GATES.md",
+            "interview": "tutorial/07-ENVIRONMENTS-AND-APPROVAL-GATES_interview_questions.json"
           }
         },
         {
@@ -101,7 +109,8 @@
           "title": "Secrets, Security & Compliance",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/08-SECRETS-SECURITY-COMPLIANCE.md"
+            "mdx": "tutorial/08-SECRETS-SECURITY-COMPLIANCE.md",
+            "interview": "tutorial/08-SECRETS-SECURITY-COMPLIANCE_interview_questions.json"
           }
         },
         {
@@ -109,7 +118,8 @@
           "title": "Artifacts, Versioning & Observability",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/09-ARTIFACTS-VERSIONING-10-MONITORING-OBSERVABILITY.md"
+            "mdx": "tutorial/09-ARTIFACTS-VERSIONING-10-MONITORING-OBSERVABILITY.md",
+            "interview": "tutorial/09-ARTIFACTS-VERSIONING-10-MONITORING-OBSERVABILITY_interview_questions.json"
           }
         },
         {
@@ -117,7 +127,8 @@
           "title": "Scaling Patterns & Capstone",
           "defaultMode": "mdx",
           "modes": {
-            "mdx": "tutorial/11-SCALING-PATTERNS-12-CAPSTONE.md"
+            "mdx": "tutorial/11-SCALING-PATTERNS-12-CAPSTONE.md",
+            "interview": "tutorial/11-SCALING-PATTERNS-12-CAPSTONE_interview_questions.json"
           }
         }
       ]
