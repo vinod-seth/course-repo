@@ -21,7 +21,7 @@
       "lessons": [
         {
           "id": "00-course-overview",
-          "title": "00 Course Overview",
+          "title": "Course Overview",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/00-course-overview.mdx",
@@ -31,7 +31,7 @@
         },
         {
           "id": "01-under-the-hood",
-          "title": "01 Under The Hood",
+          "title": "Under The Hood",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/01-under-the-hood.mdx",
@@ -41,7 +41,7 @@
         },
         {
           "id": "02-anatomy-perfect-prompt",
-          "title": "02 Anatomy Perfect Prompt",
+          "title": "Anatomy Perfect Prompt",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/02-anatomy-perfect-prompt.mdx",
@@ -51,7 +51,7 @@
         },
         {
           "id": "03-few-shot-prompting",
-          "title": "03 Few Shot Prompting",
+          "title": "Few Shot Prompting",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/03-few-shot-prompting.mdx",
@@ -61,7 +61,7 @@
         },
         {
           "id": "04-reasoned-prompting",
-          "title": "04 Reasoned Prompting",
+          "title": "Reasoned Prompting",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/04-reasoned-prompting.mdx",
@@ -71,7 +71,7 @@
         },
         {
           "id": "04b-rag-prompting",
-          "title": "04B Rag Prompting",
+          "title": "B Rag Prompting",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/04b-rag-prompting.mdx",
@@ -81,7 +81,7 @@
         },
         {
           "id": "05-delimiters-guardrails",
-          "title": "05 Delimiters Guardrails",
+          "title": "Delimiters Guardrails",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/05-delimiters-guardrails.mdx",
@@ -91,7 +91,7 @@
         },
         {
           "id": "06-programmatic-outputs",
-          "title": "06 Programmatic Outputs",
+          "title": "Programmatic Outputs",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/06-programmatic-outputs.mdx",
@@ -101,7 +101,7 @@
         },
         {
           "id": "07-meta-chaining",
-          "title": "07 Meta Chaining",
+          "title": "Meta Chaining",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/07-meta-chaining.mdx",
@@ -111,7 +111,7 @@
         },
         {
           "id": "08-evaluation-iteration",
-          "title": "08 Evaluation Iteration",
+          "title": "Evaluation Iteration",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/08-evaluation-iteration.mdx",
@@ -121,7 +121,7 @@
         },
         {
           "id": "09-capstone-project",
-          "title": "09 Capstone Project",
+          "title": "Capstone Project",
           "defaultMode": "mdx",
           "modes": {
             "mdx": "tutorial/09-capstone-project.mdx",
