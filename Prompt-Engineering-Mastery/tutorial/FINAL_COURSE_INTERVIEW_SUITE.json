@@ -1,0 +1,78 @@
+{
+  "lesson_title": "Prompt Engineering Mastery Comprehensive Course Interview Suite",
+  "experience_levels": {
+    "junior": [
+      {
+        "id": "pe_fc_j1",
+        "question": "Explain the difference between Zero-Shot, Few-Shot, and Chain-of-Thought prompting.",
+        "complexity": "Easy",
+        "companies": [
+          "OpenAI",
+          "Google"
+        ],
+        "core_intent": "Evaluates foundational prompt engineering taxonomy.",
+        "preparation_guide": "Define each pattern and explain when to use each based on task complexity.",
+        "explanation": "Zero-Shot asks directly without examples; Few-Shot provides demonstration pairs; Chain-of-Thought guides intermediate reasoning steps.",
+        "star_framework_tip": "Provide a quick concrete example for each prompting style.",
+        "common_pitfalls": [
+          "Confusing Few-Shot examples with system instructions"
+        ],
+        "references": [
+          {
+            "title": "OpenAI Prompt Engineering Guide",
+            "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+          }
+        ]
+      }
+    ],
+    "mid_level": [
+      {
+        "id": "pe_fc_m1",
+        "question": "How do you build an automated prompt regression testing pipeline using LLM-as-a-Judge?",
+        "complexity": "Medium",
+        "companies": [
+          "Anthropic",
+          "OpenAI"
+        ],
+        "core_intent": "Tests prompt evaluation engineering and CI integration.",
+        "preparation_guide": "Discuss golden test datasets, pairwise evaluation, assertion rubrics, and CI/CD pipeline integration.",
+        "explanation": "Automated evaluation pipelines run test inputs through prompt templates and evaluate outputs against rubrics using an evaluation LLM to prevent regression.",
+        "star_framework_tip": "Detail dataset curation, rubric design, and passing score thresholds.",
+        "common_pitfalls": [
+          "Relying on subjective human evaluation for every prompt iteration"
+        ],
+        "references": [
+          {
+            "title": "Promptfoo Evaluation",
+            "url": "https://www.promptfoo.dev/"
+          }
+        ]
+      }
+    ],
+    "senior": [
+      {
+        "id": "pe_fc_s1",
+        "question": "Architect an enterprise Agentic Multi-Model Routing & Guardrail Gateway handling 50,000 requests/minute with dynamic cost and latency optimization.",
+        "complexity": "System Design",
+        "companies": [
+          "Google",
+          "OpenAI",
+          "Anthropic"
+        ],
+        "core_intent": "Evaluates senior AI platform architecture and production LLM gateways.",
+        "preparation_guide": "Detail semantic caching, prompt prefix caching, model routing matrices (SLM vs LLM), Llama Guard security nodes, and fallback circuits.",
+        "explanation": "Enterprise LLM gateways intercept requests, enforce input/output security guardrails, leverage semantic caches for instant responses, and route queries dynamically to optimize cost and latency.",
+        "star_framework_tip": "Draw the gateway architecture diagram, show token metrics, and explain failover mechanisms.",
+        "common_pitfalls": [
+          "Directly exposing raw LLM endpoints to client applications without gateway governance"
+        ],
+        "references": [
+          {
+            "title": "LiteLLM Proxy Documentation",
+            "url": "https://docs.litellm.ai/"
+          }
+        ]
+      }
+    ]
+  }
+}

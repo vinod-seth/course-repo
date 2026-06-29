@@ -613,3 +613,126 @@ git push
 - [Azure Pipelines Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines)
 - [Service Connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints)
 - [Deployment Jobs](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/deployment-jobs)
+---
+
+## 📝 Chapter Quiz
+
+**Question 1:** What is the core objective of Azure Pipelines Essentials in modern DevOps practices?
+
+* [ ] To increase manual work
+* [x] To automate, streamline, and increase the reliability of software delivery
+* [ ] To eliminate code repositories
+* [ ] To replace all developers
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** To automate, streamline, and increase the reliability of software delivery
+
+**Explanation:** Azure Pipelines Essentials focuses on improving agility, reducing delivery friction, and ensuring operational reliability.
+</details>
+
+**Question 2:** Which file format is standard for defining automated workflows and pipelines associated with Azure Pipelines Essentials?
+
+* [ ] XML
+* [x] YAML (.yml or .yaml)
+* [ ] INI
+* [ ] CSV
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** YAML (.yml or .yaml)
+
+**Explanation:** YAML is the industry standard for defining pipeline-as-code configurations in GitHub Actions and Azure DevOps.
+</details>
+
+**Question 3:** What is Continuous Integration (CI)?
+
+* [ ] Deploying directly to customers without testing
+* [x] Automatically building and testing code changes upon commit
+* [ ] Writing documentation manually
+* [ ] Managing database backups
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** Automatically building and testing code changes upon commit
+
+**Explanation:** CI ensures that code pushed to repository branches is automatically validated through automated builds and tests.
+</details>
+
+**Question 4:** How should sensitive credentials and API keys be handled in deployment pipelines?
+
+* [ ] Committed directly in source code
+* [x] Stored in encrypted secrets management services and injected dynamically
+* [ ] Printed to console logs
+* [ ] Sent via unencrypted email
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** Stored in encrypted secrets management services and injected dynamically
+
+**Explanation:** Secrets must be managed using specialized vault services (e.g. GitHub Secrets or Azure Key Vault) to prevent credential leaks.
+</details>
+
+**Question 5:** What is a major benefit of Infrastructure as Code (IaC) when configuring Azure Pipelines Essentials?
+
+* [ ] Manual server setup
+* [x] Version-controlled, reproducible, and automated infrastructure provisioning
+* [ ] Disabling firewalls
+* [ ] Slower deployments
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** Version-controlled, reproducible, and automated infrastructure provisioning
+
+**Explanation:** IaC allows infrastructure configurations to be versioned, reviewed, and automatically applied without drift.
+</details>
+
+**Question 6:** What does a Deployment Approval Gate accomplish in enterprise release pipelines?
+
+* [ ] Deletes old branches
+* [x] Requires explicit authorization or automated checks before promoting changes to production
+* [ ] Restarts the build server
+* [ ] Compresses build files
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** Requires explicit authorization or automated checks before promoting changes to production
+
+**Explanation:** Approval gates introduce compliance checkpoints ensuring quality, security, and authorization before production releases.
+</details>
+
+**Question 7:** Which DORA metric measures how long it takes for committed code to reach production?
+
+* [ ] Change Failure Rate
+* [x] Lead Time for Changes
+* [ ] Mean Time to Recovery
+* [ ] Deployment Frequency
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** Lead Time for Changes
+
+**Explanation:** Lead Time for Changes quantifies the efficiency of the delivery pipeline from commit to deployment.
+</details>
+
+**Question 8:** When a production deployment fails, what is the fastest way to restore service stability when using Azure Pipelines Essentials?
+
+* [ ] Re-write the application from scratch
+* [x] Execute an automated rollback to the last known good artifact
+* [ ] Ignore the alert
+* [ ] Turn off monitoring
+
+<details>
+<summary>🔑 Click to Reveal Answer & Explanation</summary>
+
+**Correct Answer:** Execute an automated rollback to the last known good artifact
+
+**Explanation:** Automated rollbacks quickly restore operational stability by redeploying the previous verified release artifact.
+</details>

@@ -1,0 +1,78 @@
+{
+  "lesson_title": "DevOps Mastery Comprehensive Course Interview Suite",
+  "experience_levels": {
+    "junior": [
+      {
+        "id": "devops_fc_j1",
+        "question": "Walk through an end-to-end CI/CD workflow from git commit to production deployment.",
+        "complexity": "Easy",
+        "companies": [
+          "Microsoft",
+          "GitHub"
+        ],
+        "core_intent": "Evaluates full-lifecycle understanding of automated delivery pipelines.",
+        "preparation_guide": "Trace code commit → automated tests → artifact build → staging deployment → approval gate → production release.",
+        "explanation": "A complete CI/CD pipeline automates validation, building, testing, and progressive deployment while maintaining audit logs and security gates.",
+        "star_framework_tip": "Outline each stage clearly and explain feedback loop mechanics.",
+        "common_pitfalls": [
+          "Skipping testing or security scan phases in the explanation"
+        ],
+        "references": [
+          {
+            "title": "Microsoft DevOps Guide",
+            "url": "https://learn.microsoft.com/en-us/devops/"
+          }
+        ]
+      }
+    ],
+    "mid_level": [
+      {
+        "id": "devops_fc_m1",
+        "question": "How do you implement secret rotation and zero-trust security across distributed deployment pipelines?",
+        "complexity": "Medium",
+        "companies": [
+          "Amazon",
+          "Google"
+        ],
+        "core_intent": "Tests DevSecOps implementation and credential rotation engineering.",
+        "preparation_guide": "Discuss OIDC short-lived tokens, Key Vault automated rotation, and least-privilege IAM policies.",
+        "explanation": "Zero-trust pipeline security relies on OIDC dynamic token exchange, avoiding hardcoded long-lived secrets entirely.",
+        "star_framework_tip": "Demonstrate the OIDC token handshake between GitHub/Azure DevOps and cloud providers.",
+        "common_pitfalls": [
+          "Relying on static, long-lived access keys in pipeline secrets"
+        ],
+        "references": [
+          {
+            "title": "OIDC Federation",
+            "url": "https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect"
+          }
+        ]
+      }
+    ],
+    "senior": [
+      {
+        "id": "devops_fc_s1",
+        "question": "Architect an enterprise-wide GitOps platform supporting 200 microservices across multi-region Kubernetes clusters with automated canary analysis.",
+        "complexity": "System Design",
+        "companies": [
+          "Google",
+          "Microsoft",
+          "Amazon"
+        ],
+        "core_intent": "Evaluates senior cloud-native deployment architecture and GitOps orchestration.",
+        "preparation_guide": "Cover ArgoCD/Flux, Flagger/Kayenta canary analysis, Helm chart repositories, and multi-cluster GitOps directory layouts.",
+        "explanation": "Enterprise GitOps architecture separates code repos from infrastructure state repos, using automated operators to reconcile cluster state with declarative Git definitions continuous.",
+        "star_framework_tip": "Detail directory structures, control plane security, and automated canary rollback triggers.",
+        "common_pitfalls": [
+          "Coupling application code and deployment state in a single unorganized repository"
+        ],
+        "references": [
+          {
+            "title": "CNCF GitOps Working Group",
+            "url": "https://gitops.tech/"
+          }
+        ]
+      }
+    ]
+  }
+}
