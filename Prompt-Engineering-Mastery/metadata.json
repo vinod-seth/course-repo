@@ -1,0 +1,125 @@
+﻿{
+  "title": "Prompt Engineering Mastery",
+  "domain": "Generative AI",
+  "tech_stack": [
+    "Gemini",
+    "OpenAI",
+    "Prompt Engineering",
+    "RAG",
+    "LLM"
+  ],
+  "difficulty": "Intermediate",
+  "prerequisites": [
+    "Basic AI understanding"
+  ],
+  "estimated_hours": 6,
+  "version": "1.0",
+  "curriculum": [
+    {
+      "module_id": "module_01",
+      "title": "Foundations of Prompt Engineering",
+      "lessons": [
+        {
+          "id": "overview",
+          "title": "Course Overview",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/00-course-overview.mdx"
+          }
+        },
+        {
+          "id": "under_the_hood",
+          "title": "Under the Hood of LLMs",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/01-under-the-hood.mdx"
+          }
+        },
+        {
+          "id": "anatomy_perfect_prompt",
+          "title": "Anatomy of a Perfect Prompt",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/02-anatomy-perfect-prompt.mdx"
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "module_02",
+      "title": "Advanced Prompting Techniques",
+      "lessons": [
+        {
+          "id": "few_shot",
+          "title": "Few-Shot Prompting",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/03-few-shot-prompting.mdx"
+          }
+        },
+        {
+          "id": "reasoned_prompting",
+          "title": "Reasoned Prompting & Chain of Thought",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/04-reasoned-prompting.mdx"
+          }
+        },
+        {
+          "id": "rag_prompting",
+          "title": "RAG Prompting Strategies",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/04b-rag-prompting.mdx"
+          }
+        },
+        {
+          "id": "delimiters_guardrails",
+          "title": "Delimiters and Guardrails",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/05-delimiters-guardrails.mdx"
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "module_03",
+      "title": "System Integration & Capstone",
+      "lessons": [
+        {
+          "id": "programmatic_outputs",
+          "title": "Programmatic Outputs & JSON Structuring",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/06-programmatic-outputs.mdx"
+          }
+        },
+        {
+          "id": "meta_chaining",
+          "title": "Meta-Prompting and Agent Chaining",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/07-meta-chaining.mdx"
+          }
+        },
+        {
+          "id": "eval_iteration",
+          "title": "Evaluation and Iterative Improvement",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/08-evaluation-iteration.mdx"
+          }
+        },
+        {
+          "id": "capstone",
+          "title": "Capstone Project",
+          "defaultMode": "mdx",
+          "modes": {
+            "mdx": "tutorial/09-capstone-project.mdx"
+          }
+        }
+      ]
+    }
+  ]
+}
