@@ -3,318 +3,63 @@
   "experience_levels": {
     "junior": [
       {
-        "id": "j1",
-        "question": "What are the fundamental principles of Anatomy of a Perfect Prompt when interacting with Large Language Models (LLMs)?",
+        "id": "prompt_02_j1",
+        "question": "What is the 4-part prompt framework, and how do delimiters help separate instructions from untrusted user inputs?",
         "complexity": "Easy",
         "companies": [
-          "OpenAI",
-          "Google",
-          "General"
-        ],
-        "core_intent": "Evaluates foundational understanding of Anatomy of a Perfect Prompt.",
-        "preparation_guide": "Define Anatomy of a Perfect Prompt and explain how clear formatting and explicit instructions improve LLM output accuracy.",
-        "explanation": "### Core Fundamentals of Anatomy of a Perfect Prompt\n\nAnatomy of a Perfect Prompt optimizes model responses by structuring inputs, defining personas, and guiding generation constraints.",
-        "star_framework_tip": "Explain the prompt structure, cite token efficiency, and provide an example.",
-        "common_pitfalls": [
-          "Writing ambiguous or overly vague prompts"
-        ],
-        "references": [
-          {
-            "title": "OpenAI Prompt Engineering Guide",
-            "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-          }
-        ]
-      },
-      {
-        "id": "j2",
-        "question": "How does Anatomy of a Perfect Prompt mitigate hallucinations and ungrounded model outputs?",
-        "complexity": "Easy",
-        "companies": [
-          "Anthropic",
-          "Google"
-        ],
-        "core_intent": "Tests safety and grounding concepts in prompt design.",
-        "preparation_guide": "Discuss grounding in provided context, explicit 'I don't know' fallback instructions, and verification steps.",
-        "explanation": "Instructing models to rely strictly on provided context and explicitly permit fallback responses prevents fabricated claims.",
-        "star_framework_tip": "Show a bad prompt vs. a grounded prompt with explicit boundary constraints.",
-        "common_pitfalls": [
-          "Assuming models automatically verify external facts without explicit grounding"
-        ],
-        "references": [
-          {
-            "title": "Anthropic Prompt Engineering Interactive Tutorial",
-            "url": "https://docs.anthropic.com/"
-          }
-        ]
-      },
-      {
-        "id": "j3",
-        "question": "What role do system instructions, user prompts, and assistant messages play in structured LLM calls?",
-        "complexity": "Easy",
-        "companies": [
-          "OpenAI",
-          "General"
-        ],
-        "core_intent": "Assesses knowledge of chat completion API roles.",
-        "preparation_guide": "Explain system role (behavior/persona setting), user role (query), and assistant role (response/examples).",
-        "explanation": "System messages define top-level behavior constraints, user messages contain specific queries, and assistant messages provide few-shot examples or history.",
-        "star_framework_tip": "Break down an API payload showing system, user, and assistant message roles.",
-        "common_pitfalls": [
-          "Putting user queries in the system prompt or vice versa"
-        ],
-        "references": [
-          {
-            "title": "Google GenAI SDK Docs",
-            "url": "https://ai.google.dev/docs"
-          }
-        ]
-      },
-      {
-        "id": "j4",
-        "question": "How do temperature and top_p settings affect LLM output generation when using Anatomy of a Perfect Prompt?",
-        "complexity": "Easy",
-        "companies": [
-          "Google",
+          "General",
           "OpenAI"
         ],
-        "core_intent": "Tests understanding of decoding hyperparameter tuning.",
-        "preparation_guide": "Explain temperature (randomness/creativity) and top_p (nucleus sampling). Compare low vs. high values.",
-        "explanation": "Low temperature (0.0 - 0.2) produces deterministic, factual outputs. High temperature (0.7 - 1.0) increases creativity and variability.",
-        "star_framework_tip": "State recommended settings for code/extraction (low) vs creative writing (high).",
+        "core_intent": "Checks understanding of structured prompt design and basic safety boundaries.",
+        "preparation_guide": "Describe: Role, Context, Input Data, Instructions. Explain using XML/markdown tags as separators.",
+        "explanation": "A structured prompt contains: 1) System Role, 2) Context/Background, 3) Input Data, and 4) Instructions. Delimiters (like `<text>...</text>`) prevent the model from confusing untrusted user input data with task instructions.",
+        "star_framework_tip": "Provide a sample prompt demonstrating delimiters separating data from system instructions.",
         "common_pitfalls": [
-          "Tuning both temperature and top_p simultaneously without isolated testing"
+          "Concatenating user input directly into system instructions without any delimiter boundaries."
         ],
-        "references": [
-          {
-            "title": "OpenAI API Reference — Complications",
-            "url": "https://platform.openai.com/docs/api-reference"
-          }
-        ]
-      },
-      {
-        "id": "j5",
-        "question": "What is tokenization, and how does token count impact cost and context windows in Anatomy of a Perfect Prompt?",
-        "complexity": "Easy",
-        "companies": [
-          "General"
-        ],
-        "core_intent": "Assesses cost and context window optimization awareness.",
-        "preparation_guide": "Define tokens (sub-word units), tiktoken library, context limits, and pricing models.",
-        "explanation": "LLMs process text as numerical tokens. Token consumption directly determines API cost and latency.",
-        "star_framework_tip": "Explain that ~4 characters equal 1 token and demonstrate token pruning.",
-        "common_pitfalls": [
-          "Exceeding maximum context window limits resulting in truncation errors"
-        ],
-        "references": [
-          {
-            "title": "tiktoken Repository",
-            "url": "https://github.com/openai/tiktoken"
-          }
-        ]
+        "references": []
       }
     ],
     "mid_level": [
       {
-        "id": "m1",
-        "question": "How do you design a production-grade Chain-of-Thought (CoT) or ReAct prompt strategy for complex reasoning tasks using Anatomy of a Perfect Prompt?",
-        "complexity": "Medium",
-        "companies": [
-          "Google",
-          "OpenAI",
-          "Anthropic"
-        ],
-        "core_intent": "Evaluates advanced reasoning prompt architectures for Anatomy of a Perfect Prompt.",
-        "preparation_guide": "Discuss zero-shot CoT ('Let's think step by step'), manual CoT examples, and ReAct (Reason + Act) loops.",
-        "explanation": "Chain-of-Thought prompting decomposes complex multi-step reasoning problems into intermediate logic steps, significantly improving mathematical and logical accuracy.",
-        "star_framework_tip": "Show a standard prompt vs. a CoT prompt and highlight accuracy gains.",
-        "common_pitfalls": [
-          "Not parsing or stripping intermediate thought reasoning from final user-facing responses"
-        ],
-        "references": [
-          {
-            "title": "Chain-of-Thought Paper (Wei et al.)",
-            "url": "https://arxiv.org/abs/2201.11903"
-          }
-        ]
-      },
-      {
-        "id": "m2",
-        "question": "How do you construct robust JSON schemas and structured outputs using Pydantic or Function Calling alongside Anatomy of a Perfect Prompt?",
-        "complexity": "Medium",
-        "companies": [
-          "OpenAI",
-          "Google"
-        ],
-        "core_intent": "Tests programmatic LLM integration and structured data extraction.",
-        "preparation_guide": "Discuss constrained decoding, response_format={'type': 'json_object'}, and tools/function calling schemas.",
-        "explanation": "Structured outputs force the LLM to generate responses adhering strictly to a predefined JSON schema, enabling reliable downstream software integration.",
-        "star_framework_tip": "Provide a Pydantic model and show how it is passed as a structured output schema.",
-        "common_pitfalls": [
-          "Relying on prompt text alone for JSON formatting instead of API-level schema constraints"
-        ],
-        "references": [
-          {
-            "title": "OpenAI Structured Outputs Guide",
-            "url": "https://platform.openai.com/docs/guides/structured-outputs"
-          }
-        ]
-      },
-      {
-        "id": "m3",
-        "question": "What techniques protect an enterprise application utilizing Anatomy of a Perfect Prompt against Prompt Injection and Jailbreaking attacks?",
+        "id": "prompt_02_m1",
+        "question": "How do you design prompt boundaries to protect against prompt injection attacks where users try to override system commands?",
         "complexity": "Medium",
         "companies": [
           "Anthropic",
-          "Google",
-          "Meta"
+          "Google"
         ],
-        "core_intent": "Evaluates LLM security hardening and adversarial robustness.",
-        "preparation_guide": "Discuss direct vs. indirect prompt injection, XML delimiters (`<context>`), input sanitization, and secondary guardrail classifiers.",
-        "explanation": "Defending against prompt injection requires encapsulating user input inside XML tags, validating inputs via guardrail models (Llama Guard), and separating control instructions from untrusted data.",
-        "star_framework_tip": "Detail a multi-layered security architecture: Input Guardrail → Delimited Prompt → Output Guardrail.",
+        "core_intent": "Tests prompt security, adversarial input handling, and sandboxing.",
+        "preparation_guide": "Explain instruction prioritization, input validation checks, and wrapping inputs in XML delimiters.",
+        "explanation": "Defend against prompt injection by: 1) wrapping inputs in explicit XML/HTML tags (e.g. `<user_input>`), 2) instructing the model to treat content within those tags strictly as data, and 3) verifying output structure before returning it to the user.",
+        "star_framework_tip": "Describe the 'sandbox instructions' pattern to isolate untrusted inputs.",
         "common_pitfalls": [
-          "Assuming system prompts are unhackable without input sanitization and verification"
+          "Relying strictly on negative instructions (e.g. 'Never ignore instructions') to prevent overrides."
         ],
-        "references": [
-          {
-            "title": "OWASP Top 10 for LLM Applications",
-            "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
-          }
-        ]
-      },
-      {
-        "id": "m4",
-        "question": "How do you evaluate and benchmark prompt performance at scale across hundreds of test cases in Anatomy of a Perfect Prompt?",
-        "complexity": "Medium",
-        "companies": [
-          "OpenAI",
-          "Anthropic"
-        ],
-        "core_intent": "Assesses prompt evaluation and regression testing methodologies.",
-        "preparation_guide": "Discuss LLM-as-a-Judge, exact match metrics, Semantic similarity (embeddings), and evaluation frameworks like Ragas or Promptfoo.",
-        "explanation": "Automated evaluation pipelines use a stronger LLM (or deterministic assertions) to rate generated outputs against golden datasets across criteria like accuracy, relevance, and toxicity.",
-        "star_framework_tip": "Describe your test dataset creation, metric selection, and CI/CD prompt evaluation gates.",
-        "common_pitfalls": [
-          "Manually spot-checking prompts instead of running automated evaluation suites"
-        ],
-        "references": [
-          {
-            "title": "Promptfoo Evaluation Tool",
-            "url": "https://www.promptfoo.dev/"
-          }
-        ]
-      },
-      {
-        "id": "m5",
-        "question": "How do you implement dynamic Retrieval-Augmented Generation (RAG) prompt synthesis using vector search and contextual reranking?",
-        "complexity": "Medium",
-        "companies": [
-          "Google",
-          "Meta"
-        ],
-        "core_intent": "Evaluates RAG context integration into prompt templates.",
-        "preparation_guide": "Cover semantic search retrieval, chunk windowing, metadata filtering, cross-encoder reranking, and context window assembly.",
-        "explanation": "RAG prompt synthesis retrieves relevant document chunks from a vector database based on embedding similarity, reranks them, and dynamically injects them into the LLM context window.",
-        "star_framework_tip": "Trace the data flow: User Query → Embedding → Vector Search → Rerank → Prompt Template → LLM.",
-        "common_pitfalls": [
-          "Stuffing irrelevant retrieved chunks into context, causing 'Lost in the Middle' accuracy drops"
-        ],
-        "references": [
-          {
-            "title": "RAG Survey Paper",
-            "url": "https://arxiv.org/abs/2312.10997"
-          }
-        ]
+        "references": []
       }
     ],
     "senior": [
       {
-        "id": "s1",
-        "question": "Architect an enterprise Autonomous Agent orchestration framework utilizing Anatomy of a Perfect Prompt, supporting dynamic tool routing, long-term memory management, and self-reflection loops.",
+        "id": "prompt_02_s1",
+        "question": "Design an automated sanitation gateway that intercepts adversarial prompts and prevents jailbreak attempts on an enterprise chatbot.",
         "complexity": "System Design",
         "companies": [
-          "Google",
           "OpenAI",
           "Anthropic",
-          "Meta"
-        ],
-        "core_intent": "Evaluates senior AI architecture and agentic system design around Anatomy of a Perfect Prompt.",
-        "preparation_guide": "Cover Plan-and-Solve patterns, state graph management (LangGraph/AutoGen), short/long-term vector memory, tool calling, and human-in-the-loop validation.",
-        "explanation": "### Enterprise Autonomous Agent Architecture\n\nDesigning production agent systems around Anatomy of a Perfect Prompt requires state machines for cyclic execution, explicit tool calling schemas, semantic memory retrieval, and strict execution sandboxes.",
-        "star_framework_tip": "Draw the agent architecture diagram, detail state transitions, and explain error recovery loops.",
-        "common_pitfalls": [
-          "Creating infinite execution loops without max-iteration safeguards or recursion limits"
-        ],
-        "references": [
-          {
-            "title": "LangGraph Documentation",
-            "url": "https://langchain-ai.github.io/langgraph/"
-          }
-        ]
-      },
-      {
-        "id": "s2",
-        "question": "How would you optimize latency and throughput for a high-volume LLM application serving 10,000 requests/minute using prompt caching, speculative decoding, and model routing?",
-        "complexity": "Hard",
-        "companies": [
-          "OpenAI",
           "Google"
         ],
-        "core_intent": "Tests high-throughput LLM serving and prompt optimization at scale.",
-        "preparation_guide": "Discuss Anthropic/OpenAI prompt caching mechanisms, semantic response caching (Redis/GPTCache), speculative execution, and routing queries between small/large models based on complexity.",
-        "explanation": "High-throughput LLM systems leverage prompt prefix caching (reusing KV-cache state for identical prompt prefixes), semantic caching for identical queries, and semantic routers directing simple requests to 8B models and complex queries to 405B models.",
-        "star_framework_tip": "Quantify latency reductions (e.g. 50% drop in time-to-first-token) and cost savings from prompt caching and model routing.",
+        "core_intent": "Tests system design for prompt security, classification wrappers, and alignment guardrails.",
+        "preparation_guide": "Incorporate dual-model pipelines, input classifier checks (Llama Guard), parsing libraries, and output validations.",
+        "explanation": "Implement a dual-model security gateway: 1) run inputs through Llama Guard or a custom classifier to flag malicious intent, 2) wrap validated inputs in system instructions with structured delimiters, and 3) run generated outputs through a final classification check before returning them.",
+        "star_framework_tip": "Explain the latency-security trade-off of running classification wrappers.",
         "common_pitfalls": [
-          "Not structuring prompts to maximize prefix matching for KV-cache reuse"
+          "Using static regex lists to block jailbreaks (which fails against paraphrasing attacks)."
         ],
         "references": [
           {
-            "title": "Anthropic Prompt Caching Guide",
-            "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching"
-          }
-        ]
-      },
-      {
-        "id": "s3",
-        "question": "How do you fine-tune a open-weights SLM (e.g., Llama-3-8B or Mistral-7B) using Direct Preference Optimization (DPO) or LoRA to replace complex multi-shot prompts?",
-        "complexity": "Hard",
-        "companies": [
-          "Meta",
-          "Google"
-        ],
-        "core_intent": "Evaluates transition from prompt engineering to parameter-efficient fine-tuning (PEFT).",
-        "preparation_guide": "Discuss SFT vs DPO/RLHF, dataset curation from prompt outputs, LoRA rank/alpha hyperparameter tuning, and model distillation.",
-        "explanation": "When prompt complexity and context length become cost-prohibitive, distilling multi-shot prompt behavior into a smaller open-weights model via LoRA fine-tuning yields sub-100ms latency and 90%+ cost reduction.",
-        "star_framework_tip": "Detail dataset generation from teacher models, LoRA fine-tuning parameters, and evaluation metrics.",
-        "common_pitfalls": [
-          "Fine-tuning on low-quality synthetic data without rigorous filtering"
-        ],
-        "references": [
-          {
-            "title": "DPO Paper (Rafailov et al.)",
-            "url": "https://arxiv.org/abs/2305.18290"
-          }
-        ]
-      },
-      {
-        "id": "s4",
-        "question": "Describe how to build a dynamic Meta-Prompting engine that automatically generates, critiques, and optimizes prompts for specialized downstream tasks.",
-        "complexity": "System Design",
-        "companies": [
-          "Anthropic",
-          "OpenAI"
-        ],
-        "core_intent": "Tests meta-reasoning and automated prompt optimization systems.",
-        "preparation_guide": "Discuss DSPy framework, evolutionary prompt optimization algorithms (APE), and automated feedback loops.",
-        "explanation": "Automated prompt optimization tools like DSPy replace manual prompt tweaking by compiling declarative module signatures into optimized prompts through algorithmic bootstrapping and evaluation against training sets.",
-        "star_framework_tip": "Explain the compilation pipeline: Signature → Bootstrap Few-Shot → Telemetry Evaluation → Optimized Teleprompter.",
-        "common_pitfalls": [
-          "Overfitting prompts to small evaluation datasets"
-        ],
-        "references": [
-          {
-            "title": "DSPy Framework Documentation",
-            "url": "https://dspy-docs.vercel.app/"
+            "title": "Llama Guard Classifier",
+            "url": "https://huggingface.co/meta-llama/Llama-Guard-3-8B"
           }
         ]
       }

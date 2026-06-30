@@ -1,315 +1,65 @@
 {
-  "lesson_title": "Artifacts Versioning & Monitoring Observability",
+  "lesson_title": "Artifacts, Versioning, Monitoring, and Observability",
   "experience_levels": {
     "junior": [
       {
-        "id": "j1",
-        "question": "What are the core objectives of Artifacts Versioning & Monitoring Observability in enterprise CI/CD pipelines?",
+        "id": "devops_09_j1",
+        "question": "What is the difference between a container registry (like GitHub Packages) and a package manager feed (like Azure Artifacts)?",
         "complexity": "Easy",
         "companies": [
-          "Microsoft",
-          "General"
+          "General",
+          "GitHub"
         ],
-        "core_intent": "Evaluates understanding of Artifacts Versioning & Monitoring Observability fundamentals.",
-        "preparation_guide": "Define Artifacts Versioning & Monitoring Observability and explain how it improves software delivery speed and reliability.",
-        "explanation": "### Core Fundamentals of Artifacts Versioning & Monitoring Observability\n\nArtifacts Versioning & Monitoring Observability streamlines development and operational workflows, reducing manual deployment overhead.",
-        "star_framework_tip": "Explain the concept, state business benefits, and cite automation metrics.",
+        "core_intent": "Checks understanding of artifact storage formats and platforms.",
+        "preparation_guide": "Differentiate Docker images from library packages (npm, NuGet, Maven).",
+        "explanation": "Container registries (e.g. GitHub Packages, Docker Hub) store compiled, runnable Docker images. Package feeds (e.g. Azure Artifacts, npm, NuGet) store shared code libraries and dependencies used during the compile/build phase of applications.",
+        "star_framework_tip": "Give examples of when to use each registry type in a pipeline.",
         "common_pitfalls": [
-          "Confusing CI with CD concepts"
+          "Assuming container registries and package feeds use the same API protocols."
         ],
-        "references": [
-          {
-            "title": "Azure DevOps Documentation",
-            "url": "https://learn.microsoft.com/en-us/azure/devops/"
-          }
-        ]
-      },
-      {
-        "id": "j2",
-        "question": "How does Artifacts Versioning & Monitoring Observability integrate with GitHub Actions and Azure Pipelines?",
-        "complexity": "Easy",
-        "companies": [
-          "GitHub",
-          "Microsoft"
-        ],
-        "core_intent": "Tests comparative tool knowledge for Artifacts Versioning & Monitoring Observability.",
-        "preparation_guide": "Contrast YAML pipeline syntax across platforms.",
-        "explanation": "Both platforms support YAML workflows, enabling code-driven CI/CD configuration.",
-        "star_framework_tip": "Compare triggers, jobs, and step definitions across both tools.",
-        "common_pitfalls": [
-          "Mixing up syntax keywords between GitHub Actions and Azure Pipelines"
-        ],
-        "references": [
-          {
-            "title": "GitHub Actions Docs",
-            "url": "https://docs.github.com/en/actions"
-          }
-        ]
-      },
-      {
-        "id": "j3",
-        "question": "What are common security and secret management practices when configuring Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Easy",
-        "companies": [
-          "General"
-        ],
-        "core_intent": "Assesses security hygiene in automated workflows.",
-        "preparation_guide": "Discuss secret masking, Key Vault integration, and environment variables.",
-        "explanation": "Secrets must never be hardcoded in repository files; use encrypted secrets stores.",
-        "star_framework_tip": "Detail secret injection patterns via environment variables.",
-        "common_pitfalls": [
-          "Committing API keys or credentials directly to Git"
-        ],
-        "references": [
-          {
-            "title": "OWASP DevSecOps Guide",
-            "url": "https://owasp.org/"
-          }
-        ]
-      },
-      {
-        "id": "j4",
-        "question": "How do you track build artifacts and version releases in Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Easy",
-        "companies": [
-          "Microsoft"
-        ],
-        "core_intent": "Tests artifact management concepts.",
-        "preparation_guide": "Explain semantic versioning and build package publication.",
-        "explanation": "Artifacts are packaged build outputs stored in registries for deployment stages.",
-        "star_framework_tip": "Describe how build jobs produce and publish artifacts.",
-        "common_pitfalls": [
-          "Not versioning artifacts deterministically"
-        ],
-        "references": [
-          {
-            "title": "Semantic Versioning",
-            "url": "https://semver.org/"
-          }
-        ]
-      },
-      {
-        "id": "j5",
-        "question": "What metric best measures the operational health of Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Easy",
-        "companies": [
-          "General"
-        ],
-        "core_intent": "Assesses familiarity with DORA metrics.",
-        "preparation_guide": "Discuss Deployment Frequency, Lead Time for Changes, MTTR, and Change Failure Rate.",
-        "explanation": "DORA metrics provide industry-standard benchmarks for measuring engineering velocity and stability.",
-        "star_framework_tip": "List all 4 DORA metrics and explain MTTR.",
-        "common_pitfalls": [
-          "Focusing solely on velocity while ignoring failure rates"
-        ],
-        "references": [
-          {
-            "title": "DORA Metrics Guide",
-            "url": "https://dora.dev/"
-          }
-        ]
+        "references": []
       }
     ],
     "mid_level": [
       {
-        "id": "m1",
-        "question": "How do you design a zero-downtime deployment strategy for Artifacts Versioning & Monitoring Observability using Blue/Green or Canary patterns?",
-        "complexity": "Medium",
-        "companies": [
-          "Microsoft",
-          "Google",
-          "Amazon"
-        ],
-        "core_intent": "Evaluates deployment pattern design for Artifacts Versioning & Monitoring Observability.",
-        "preparation_guide": "Compare Blue/Green routing vs Canary traffic splitting and health probe checks.",
-        "explanation": "Zero-downtime deployment ensures continuous availability by shifting traffic dynamically between environments after automated health verification.",
-        "star_framework_tip": "Explain traffic switching, database migration strategies, and automated rollbacks.",
-        "common_pitfalls": [
-          "Not accounting for database schema backward compatibility during blue/green deploys"
-        ],
-        "references": [
-          {
-            "title": "Azure Deployment Patterns",
-            "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
-          }
-        ]
-      },
-      {
-        "id": "m2",
-        "question": "What strategies do you employ to troubleshoot pipeline failures and intermittent test flakiness in Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Medium",
-        "companies": [
-          "GitHub",
-          "Meta"
-        ],
-        "core_intent": "Tests debugging and pipeline reliability engineering.",
-        "preparation_guide": "Discuss test isolation, retry mechanisms, diagnostic logging, and containerized test runners.",
-        "explanation": "Addressing flaky tests requires isolating shared state, enabling detailed diagnostic logging, and enforcing strict timeouts.",
-        "star_framework_tip": "Detail your systematic triage process from log analysis to reproduction.",
-        "common_pitfalls": [
-          "Ignoring flaky tests until they block critical production releases"
-        ],
-        "references": [
-          {
-            "title": "Google Testing Blog",
-            "url": "https://testing.googleblog.com/"
-          }
-        ]
-      },
-      {
-        "id": "m3",
-        "question": "How do you implement environment approval gates and manual intervention checks in Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Medium",
-        "companies": [
-          "Microsoft",
-          "General"
-        ],
-        "core_intent": "Evaluates governance and compliance controls in pipelines.",
-        "preparation_guide": "Explain environment protection rules, RBAC, and automated check integrations.",
-        "explanation": "Approval gates ensure designated release managers or automated security scans authorize deployment to production environments.",
-        "star_framework_tip": "Explain how environments enforce branch policies and multi-user approval checks.",
-        "common_pitfalls": [
-          "Granting overly permissive approval permissions"
-        ],
-        "references": [
-          {
-            "title": "GitHub Environments",
-            "url": "https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment"
-          }
-        ]
-      },
-      {
-        "id": "m4",
-        "question": "How do you optimize CI pipeline execution speed and cache build dependencies for Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Medium",
-        "companies": [
-          "Google",
-          "GitHub"
-        ],
-        "core_intent": "Assesses pipeline performance tuning skills.",
-        "preparation_guide": "Discuss actions/cache, Docker layer caching, parallel jobs, and artifact reuse.",
-        "explanation": "Caching package manager directories (npm, pip, maven) and container layers drastically cuts pipeline execution time.",
-        "star_framework_tip": "Quantify build time reductions achieved through effective caching strategies.",
-        "common_pitfalls": [
-          "Caching volatile build artifacts that cause cache invalidation thrashing"
-        ],
-        "references": [
-          {
-            "title": "Caching Dependencies in GitHub Actions",
-            "url": "https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows"
-          }
-        ]
-      },
-      {
-        "id": "m5",
-        "question": "How do you implement Infrastructure as Code (IaC) validation in pipelines covering Artifacts Versioning & Monitoring Observability?",
+        "id": "devops_09_m1",
+        "question": "How do you structure an artifact retention policy to optimize feed performance while managing storage costs?",
         "complexity": "Medium",
         "companies": [
           "Amazon",
           "Microsoft"
         ],
-        "core_intent": "Evaluates IaC automation with Terraform or Bicep.",
-        "preparation_guide": "Cover linting (tflint, bicep lint), security scanning (checkov, tfsec), and automated plan approvals.",
-        "explanation": "IaC validation in CI verifies security compliance and syntax correctness before executing infrastructure changes.",
-        "star_framework_tip": "Show a linting → security scan → plan generation → apply pipeline workflow.",
+        "core_intent": "Evaluates package registry management and cost-performance tuning.",
+        "preparation_guide": "Describe semantic promotion feeds, setting max version limits, and automated cleanups.",
+        "explanation": "Implement retention rules: 1) only keep the latest 5 pre-release builds, 2) promote stable builds to an immutable production feed, and 3) delete artifacts older than 30 days that are not marked as stable, reducing storage costs while keeping old releases accessible.",
+        "star_framework_tip": "Quantify storage savings achieved by implementing retention policies.",
         "common_pitfalls": [
-          "Running infrastructure applies without reviewing plan outputs"
+          "Deleting older production build artifacts that are needed for rollbacks or audits."
         ],
-        "references": [
-          {
-            "title": "Terraform Automation",
-            "url": "https://developer.hashicorp.com/terraform/tutorials/automation"
-          }
-        ]
+        "references": []
       }
     ],
     "senior": [
       {
-        "id": "s1",
-        "question": "Architect an enterprise multi-region hybrid cloud CI/CD platform incorporating Artifacts Versioning & Monitoring Observability with strict audit logging, SOC2 compliance, and automated disaster recovery.",
+        "id": "devops_09_s1",
+        "question": "Architect a centralized telemetry and alerting system for a microservices cluster that tracks DORA metrics and alerts on anomalies under high request rates.",
         "complexity": "System Design",
         "companies": [
-          "Microsoft",
           "Google",
-          "Amazon"
+          "Datadog",
+          "Uber"
         ],
-        "core_intent": "Evaluates senior enterprise architecture and compliance design around Artifacts Versioning & Monitoring Observability.",
-        "preparation_guide": "Detail identity federations, OIDC authentication, self-hosted runner fleets, network isolation, and immutable audit logs.",
-        "explanation": "### Enterprise Hybrid CI/CD Architecture\n\nDesigning enterprise delivery platforms around Artifacts Versioning & Monitoring Observability requires federated identity via OIDC (eliminating long-lived credentials), isolated runner scale sets, and centralized SIEM audit logging.",
-        "star_framework_tip": "Draw the architecture layers, address multi-tenant governance, and explain zero-trust runner security.",
+        "core_intent": "Tests observability architecture, distributed logging, and telemetry ingestion.",
+        "preparation_guide": "Describe OpenTelemetry collectors, tail-based sampling, Prometheus metrics aggregation, and setting alert rules.",
+        "explanation": "Deploy OpenTelemetry agents to collect logs, metrics, and traces. Route telemetry to an OpenTelemetry collector cluster. Use tail-based sampling to drop 99% of successful traces while retaining errors. Aggregate metrics in Prometheus to calculate DORA metrics, and configure alerts to notify teams if error rates exceed thresholds.",
+        "star_framework_tip": "Show how tail-based sampling reduces telemetry storage costs without losing key debug data.",
         "common_pitfalls": [
-          "Using long-lived static credentials for cloud authentication instead of OIDC federation"
+          "Attempting to write all raw trace logs to databases, causing bottlenecks and high storage costs."
         ],
         "references": [
           {
-            "title": "OpenID Connect in GitHub Actions",
-            "url": "https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect"
-          }
-        ]
-      },
-      {
-        "id": "s2",
-        "question": "How would you migrate 500 legacy monolith Jenkins pipelines to a modern GitOps architecture leveraging Artifacts Versioning & Monitoring Observability and ArgoCD/Flux?",
-        "complexity": "Hard",
-        "companies": [
-          "Google",
-          "Meta"
-        ],
-        "core_intent": "Tests large-scale engineering transformation and GitOps implementation.",
-        "preparation_guide": "Discuss template abstraction, automated conversion tooling, declarative GitOps state synchronization, and organizational change management.",
-        "explanation": "Migrating to GitOps requires decoupling build processes from deployment orchestration, storing desired cluster state in Git, and letting continuous reconciliation engines synchronize state.",
-        "star_framework_tip": "Detail phase 1 (standardization), phase 2 (migration tooling), and phase 3 (GitOps rollout).",
-        "common_pitfalls": [
-          "Attempting to replicate imperative shell script steps inside declarative GitOps frameworks"
-        ],
-        "references": [
-          {
-            "title": "ArgoCD Documentation",
-            "url": "https://argo-cd.readthedocs.io/"
-          }
-        ]
-      },
-      {
-        "id": "s3",
-        "question": "How do you design an automated observability and self-healing deployment infrastructure for Artifacts Versioning & Monitoring Observability?",
-        "complexity": "Hard",
-        "companies": [
-          "Amazon",
-          "Microsoft"
-        ],
-        "core_intent": "Tests site reliability engineering (SRE) integration with CI/CD.",
-        "preparation_guide": "Cover Prometheus/Application Insights telemetry, automated canary analysis (Kayenta), and automated rollback triggers.",
-        "explanation": "Automated canary analysis evaluates real-time error rates and latency metrics against baseline builds, automatically triggering rollbacks if SLIs degrade.",
-        "star_framework_tip": "Define SLIs/SLOs, explain metric aggregation windows, and describe rollback execution.",
-        "common_pitfalls": [
-          "Setting overly sensitive anomaly thresholds that cause false-positive rollbacks"
-        ],
-        "references": [
-          {
-            "title": "Google SRE Book — Release Engineering",
-            "url": "https://sre.google/sre-book/release-engineering/"
-          }
-        ]
-      },
-      {
-        "id": "s4",
-        "question": "Describe how to secure self-hosted runner infrastructure for Artifacts Versioning & Monitoring Observability against supply chain attacks and malicious Pull Request code execution.",
-        "complexity": "System Design",
-        "companies": [
-          "GitHub",
-          "Microsoft"
-        ],
-        "core_intent": "Tests deep pipeline security and runner isolation engineering.",
-        "preparation_guide": "Discuss ephemeral runners, container isolation, fork PR execution policies, and network egress filtering.",
-        "explanation": "Securing self-hosted runners requires ephemeral auto-scaling instances (destroyed after every single job), restricting PR triggers from forks, and enforcing egress firewall rules.",
-        "star_framework_tip": "Detail threat vectors (poisoned pipeline execution) and corresponding mitigation controls.",
-        "common_pitfalls": [
-          "Persistent self-hosted runners executing unvetted PR code from external forks"
-        ],
-        "references": [
-          {
-            "title": "Security Hardening for GitHub Actions",
-            "url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions"
+            "title": "OpenTelemetry documentation",
+            "url": "https://opentelemetry.io/docs/"
           }
         ]
       }

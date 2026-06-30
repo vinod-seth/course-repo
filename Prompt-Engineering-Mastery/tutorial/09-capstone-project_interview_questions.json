@@ -3,320 +3,59 @@
   "experience_levels": {
     "junior": [
       {
-        "id": "j1",
-        "question": "What are the fundamental principles of Capstone Project when interacting with Large Language Models (LLMs)?",
-        "complexity": "Easy",
-        "companies": [
-          "OpenAI",
-          "Google",
-          "General"
-        ],
-        "core_intent": "Evaluates foundational understanding of Capstone Project.",
-        "preparation_guide": "Define Capstone Project and explain how clear formatting and explicit instructions improve LLM output accuracy.",
-        "explanation": "### Core Fundamentals of Capstone Project\n\nCapstone Project optimizes model responses by structuring inputs, defining personas, and guiding generation constraints.",
-        "star_framework_tip": "Explain the prompt structure, cite token efficiency, and provide an example.",
-        "common_pitfalls": [
-          "Writing ambiguous or overly vague prompts"
-        ],
-        "references": [
-          {
-            "title": "OpenAI Prompt Engineering Guide",
-            "url": "https://platform.openai.com/docs/guides/prompt-engineering"
-          }
-        ]
-      },
-      {
-        "id": "j2",
-        "question": "How does Capstone Project mitigate hallucinations and ungrounded model outputs?",
-        "complexity": "Easy",
-        "companies": [
-          "Anthropic",
-          "Google"
-        ],
-        "core_intent": "Tests safety and grounding concepts in prompt design.",
-        "preparation_guide": "Discuss grounding in provided context, explicit 'I don't know' fallback instructions, and verification steps.",
-        "explanation": "Instructing models to rely strictly on provided context and explicitly permit fallback responses prevents fabricated claims.",
-        "star_framework_tip": "Show a bad prompt vs. a grounded prompt with explicit boundary constraints.",
-        "common_pitfalls": [
-          "Assuming models automatically verify external facts without explicit grounding"
-        ],
-        "references": [
-          {
-            "title": "Anthropic Prompt Engineering Interactive Tutorial",
-            "url": "https://docs.anthropic.com/"
-          }
-        ]
-      },
-      {
-        "id": "j3",
-        "question": "What role do system instructions, user prompts, and assistant messages play in structured LLM calls?",
-        "complexity": "Easy",
-        "companies": [
-          "OpenAI",
-          "General"
-        ],
-        "core_intent": "Assesses knowledge of chat completion API roles.",
-        "preparation_guide": "Explain system role (behavior/persona setting), user role (query), and assistant role (response/examples).",
-        "explanation": "System messages define top-level behavior constraints, user messages contain specific queries, and assistant messages provide few-shot examples or history.",
-        "star_framework_tip": "Break down an API payload showing system, user, and assistant message roles.",
-        "common_pitfalls": [
-          "Putting user queries in the system prompt or vice versa"
-        ],
-        "references": [
-          {
-            "title": "Google GenAI SDK Docs",
-            "url": "https://ai.google.dev/docs"
-          }
-        ]
-      },
-      {
-        "id": "j4",
-        "question": "How do temperature and top_p settings affect LLM output generation when using Capstone Project?",
-        "complexity": "Easy",
-        "companies": [
-          "Google",
-          "OpenAI"
-        ],
-        "core_intent": "Tests understanding of decoding hyperparameter tuning.",
-        "preparation_guide": "Explain temperature (randomness/creativity) and top_p (nucleus sampling). Compare low vs. high values.",
-        "explanation": "Low temperature (0.0 - 0.2) produces deterministic, factual outputs. High temperature (0.7 - 1.0) increases creativity and variability.",
-        "star_framework_tip": "State recommended settings for code/extraction (low) vs creative writing (high).",
-        "common_pitfalls": [
-          "Tuning both temperature and top_p simultaneously without isolated testing"
-        ],
-        "references": [
-          {
-            "title": "OpenAI API Reference — Complications",
-            "url": "https://platform.openai.com/docs/api-reference"
-          }
-        ]
-      },
-      {
-        "id": "j5",
-        "question": "What is tokenization, and how does token count impact cost and context windows in Capstone Project?",
+        "id": "prompt_09_j1",
+        "question": "What are the core steps to structure a prompt engineering project from requirements to deployment?",
         "complexity": "Easy",
         "companies": [
           "General"
         ],
-        "core_intent": "Assesses cost and context window optimization awareness.",
-        "preparation_guide": "Define tokens (sub-word units), tiktoken library, context limits, and pricing models.",
-        "explanation": "LLMs process text as numerical tokens. Token consumption directly determines API cost and latency.",
-        "star_framework_tip": "Explain that ~4 characters equal 1 token and demonstrate token pruning.",
+        "core_intent": "Checks understanding of the prompt development lifecycle.",
+        "preparation_guide": "Outline: Scoping requirements -> draft prompt creation -> dataset testing -> parameter optimization -> deployment.",
+        "explanation": "The development lifecycle includes: 1) defining target metrics and task boundaries, 2) constructing structured base prompts, 3) testing prompts against validation sets, 4) optimizing system settings (e.g. temperature), and 5) deploying and monitoring performance.",
+        "star_framework_tip": "Explain the importance of establishing evaluation metrics early.",
         "common_pitfalls": [
-          "Exceeding maximum context window limits resulting in truncation errors"
+          "Deploying prompts to production without testing them on validation datasets first."
         ],
-        "references": [
-          {
-            "title": "tiktoken Repository",
-            "url": "https://github.com/openai/tiktoken"
-          }
-        ]
+        "references": []
       }
     ],
     "mid_level": [
       {
-        "id": "m1",
-        "question": "How do you design a production-grade Chain-of-Thought (CoT) or ReAct prompt strategy for complex reasoning tasks using Capstone Project?",
+        "id": "prompt_09_m1",
+        "question": "How do you profile and optimize prompt performance for latency, API cost, and accuracy simultaneously?",
         "complexity": "Medium",
         "companies": [
           "Google",
-          "OpenAI",
-          "Anthropic"
+          "Amazon"
         ],
-        "core_intent": "Evaluates advanced reasoning prompt architectures for Capstone Project.",
-        "preparation_guide": "Discuss zero-shot CoT ('Let's think step by step'), manual CoT examples, and ReAct (Reason + Act) loops.",
-        "explanation": "Chain-of-Thought prompting decomposes complex multi-step reasoning problems into intermediate logic steps, significantly improving mathematical and logical accuracy.",
-        "star_framework_tip": "Show a standard prompt vs. a CoT prompt and highlight accuracy gains.",
+        "core_intent": "Evaluates cost-performance optimization capabilities.",
+        "preparation_guide": "Explain token pruning, context optimization, dynamic cache checks, and model distillation.",
+        "explanation": "Balance cost and performance by: 1) pruning unnecessary context tokens, 2) caching static prompt headers (e.g. system instructions), and 3) routing simpler tasks to smaller, cost-effective models (like GPT-4o-mini).",
+        "star_framework_tip": "Outline a cost-benefit analysis comparing high-tier and low-tier models.",
         "common_pitfalls": [
-          "Not parsing or stripping intermediate thought reasoning from final user-facing responses"
+          "Optimizing only for generation accuracy while ignoring high latency and API cost overheads."
         ],
-        "references": [
-          {
-            "title": "Chain-of-Thought Paper (Wei et al.)",
-            "url": "https://arxiv.org/abs/2201.11903"
-          }
-        ]
-      },
-      {
-        "id": "m2",
-        "question": "How do you construct robust JSON schemas and structured outputs using Pydantic or Function Calling alongside Capstone Project?",
-        "complexity": "Medium",
-        "companies": [
-          "OpenAI",
-          "Google"
-        ],
-        "core_intent": "Tests programmatic LLM integration and structured data extraction.",
-        "preparation_guide": "Discuss constrained decoding, response_format={'type': 'json_object'}, and tools/function calling schemas.",
-        "explanation": "Structured outputs force the LLM to generate responses adhering strictly to a predefined JSON schema, enabling reliable downstream software integration.",
-        "star_framework_tip": "Provide a Pydantic model and show how it is passed as a structured output schema.",
-        "common_pitfalls": [
-          "Relying on prompt text alone for JSON formatting instead of API-level schema constraints"
-        ],
-        "references": [
-          {
-            "title": "OpenAI Structured Outputs Guide",
-            "url": "https://platform.openai.com/docs/guides/structured-outputs"
-          }
-        ]
-      },
-      {
-        "id": "m3",
-        "question": "What techniques protect an enterprise application utilizing Capstone Project against Prompt Injection and Jailbreaking attacks?",
-        "complexity": "Medium",
-        "companies": [
-          "Anthropic",
-          "Google",
-          "Meta"
-        ],
-        "core_intent": "Evaluates LLM security hardening and adversarial robustness.",
-        "preparation_guide": "Discuss direct vs. indirect prompt injection, XML delimiters (`<context>`), input sanitization, and secondary guardrail classifiers.",
-        "explanation": "Defending against prompt injection requires encapsulating user input inside XML tags, validating inputs via guardrail models (Llama Guard), and separating control instructions from untrusted data.",
-        "star_framework_tip": "Detail a multi-layered security architecture: Input Guardrail → Delimited Prompt → Output Guardrail.",
-        "common_pitfalls": [
-          "Assuming system prompts are unhackable without input sanitization and verification"
-        ],
-        "references": [
-          {
-            "title": "OWASP Top 10 for LLM Applications",
-            "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
-          }
-        ]
-      },
-      {
-        "id": "m4",
-        "question": "How do you evaluate and benchmark prompt performance at scale across hundreds of test cases in Capstone Project?",
-        "complexity": "Medium",
-        "companies": [
-          "OpenAI",
-          "Anthropic"
-        ],
-        "core_intent": "Assesses prompt evaluation and regression testing methodologies.",
-        "preparation_guide": "Discuss LLM-as-a-Judge, exact match metrics, Semantic similarity (embeddings), and evaluation frameworks like Ragas or Promptfoo.",
-        "explanation": "Automated evaluation pipelines use a stronger LLM (or deterministic assertions) to rate generated outputs against golden datasets across criteria like accuracy, relevance, and toxicity.",
-        "star_framework_tip": "Describe your test dataset creation, metric selection, and CI/CD prompt evaluation gates.",
-        "common_pitfalls": [
-          "Manually spot-checking prompts instead of running automated evaluation suites"
-        ],
-        "references": [
-          {
-            "title": "Promptfoo Evaluation Tool",
-            "url": "https://www.promptfoo.dev/"
-          }
-        ]
-      },
-      {
-        "id": "m5",
-        "question": "How do you implement dynamic Retrieval-Augmented Generation (RAG) prompt synthesis using vector search and contextual reranking?",
-        "complexity": "Medium",
-        "companies": [
-          "Google",
-          "Meta"
-        ],
-        "core_intent": "Evaluates RAG context integration into prompt templates.",
-        "preparation_guide": "Cover semantic search retrieval, chunk windowing, metadata filtering, cross-encoder reranking, and context window assembly.",
-        "explanation": "RAG prompt synthesis retrieves relevant document chunks from a vector database based on embedding similarity, reranks them, and dynamically injects them into the LLM context window.",
-        "star_framework_tip": "Trace the data flow: User Query → Embedding → Vector Search → Rerank → Prompt Template → LLM.",
-        "common_pitfalls": [
-          "Stuffing irrelevant retrieved chunks into context, causing 'Lost in the Middle' accuracy drops"
-        ],
-        "references": [
-          {
-            "title": "RAG Survey Paper",
-            "url": "https://arxiv.org/abs/2312.10997"
-          }
-        ]
+        "references": []
       }
     ],
     "senior": [
       {
-        "id": "s1",
-        "question": "Architect an enterprise Autonomous Agent orchestration framework utilizing Capstone Project, supporting dynamic tool routing, long-term memory management, and self-reflection loops.",
+        "id": "prompt_09_s1",
+        "question": "Architect an enterprise-grade prompt execution platform serving 10M daily requests, addressing rate-limiting, load-balancing, and failover routing across multiple AI providers.",
         "complexity": "System Design",
         "companies": [
+          "OpenAI",
           "Google",
-          "OpenAI",
-          "Anthropic",
-          "Meta"
+          "AWS"
         ],
-        "core_intent": "Evaluates senior AI architecture and agentic system design around Capstone Project.",
-        "preparation_guide": "Cover Plan-and-Solve patterns, state graph management (LangGraph/AutoGen), short/long-term vector memory, tool calling, and human-in-the-loop validation.",
-        "explanation": "### Enterprise Autonomous Agent Architecture\n\nDesigning production agent systems around Capstone Project requires state machines for cyclic execution, explicit tool calling schemas, semantic memory retrieval, and strict execution sandboxes.",
-        "star_framework_tip": "Draw the agent architecture diagram, detail state transitions, and explain error recovery loops.",
+        "core_intent": "Tests highly scalable system design for AI infrastructure.",
+        "preparation_guide": "Incorporate API gateways, token bucket rate-limiters, model replica load-balancing, and fallback routing models.",
+        "explanation": "Design an API gateway that routes requests across multiple provider regions (Azure, AWS, OpenAI) using round-robin scheduling. Enforce rate-limits with token bucket algorithms, and configure fallback routes to alternative models (e.g. switching to Claude if OpenAI is down).",
+        "star_framework_tip": "Provide the failover routing logic under high traffic load.",
         "common_pitfalls": [
-          "Creating infinite execution loops without max-iteration safeguards or recursion limits"
+          "Failing to configure fallback routing, leading to application downtime during provider outages."
         ],
-        "references": [
-          {
-            "title": "LangGraph Documentation",
-            "url": "https://langchain-ai.github.io/langgraph/"
-          }
-        ]
-      },
-      {
-        "id": "s2",
-        "question": "How would you optimize latency and throughput for a high-volume LLM application serving 10,000 requests/minute using prompt caching, speculative decoding, and model routing?",
-        "complexity": "Hard",
-        "companies": [
-          "OpenAI",
-          "Google"
-        ],
-        "core_intent": "Tests high-throughput LLM serving and prompt optimization at scale.",
-        "preparation_guide": "Discuss Anthropic/OpenAI prompt caching mechanisms, semantic response caching (Redis/GPTCache), speculative execution, and routing queries between small/large models based on complexity.",
-        "explanation": "High-throughput LLM systems leverage prompt prefix caching (reusing KV-cache state for identical prompt prefixes), semantic caching for identical queries, and semantic routers directing simple requests to 8B models and complex queries to 405B models.",
-        "star_framework_tip": "Quantify latency reductions (e.g. 50% drop in time-to-first-token) and cost savings from prompt caching and model routing.",
-        "common_pitfalls": [
-          "Not structuring prompts to maximize prefix matching for KV-cache reuse"
-        ],
-        "references": [
-          {
-            "title": "Anthropic Prompt Caching Guide",
-            "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching"
-          }
-        ]
-      },
-      {
-        "id": "s3",
-        "question": "How do you fine-tune a open-weights SLM (e.g., Llama-3-8B or Mistral-7B) using Direct Preference Optimization (DPO) or LoRA to replace complex multi-shot prompts?",
-        "complexity": "Hard",
-        "companies": [
-          "Meta",
-          "Google"
-        ],
-        "core_intent": "Evaluates transition from prompt engineering to parameter-efficient fine-tuning (PEFT).",
-        "preparation_guide": "Discuss SFT vs DPO/RLHF, dataset curation from prompt outputs, LoRA rank/alpha hyperparameter tuning, and model distillation.",
-        "explanation": "When prompt complexity and context length become cost-prohibitive, distilling multi-shot prompt behavior into a smaller open-weights model via LoRA fine-tuning yields sub-100ms latency and 90%+ cost reduction.",
-        "star_framework_tip": "Detail dataset generation from teacher models, LoRA fine-tuning parameters, and evaluation metrics.",
-        "common_pitfalls": [
-          "Fine-tuning on low-quality synthetic data without rigorous filtering"
-        ],
-        "references": [
-          {
-            "title": "DPO Paper (Rafailov et al.)",
-            "url": "https://arxiv.org/abs/2305.18290"
-          }
-        ]
-      },
-      {
-        "id": "s4",
-        "question": "Describe how to build a dynamic Meta-Prompting engine that automatically generates, critiques, and optimizes prompts for specialized downstream tasks.",
-        "complexity": "System Design",
-        "companies": [
-          "Anthropic",
-          "OpenAI"
-        ],
-        "core_intent": "Tests meta-reasoning and automated prompt optimization systems.",
-        "preparation_guide": "Discuss DSPy framework, evolutionary prompt optimization algorithms (APE), and automated feedback loops.",
-        "explanation": "Automated prompt optimization tools like DSPy replace manual prompt tweaking by compiling declarative module signatures into optimized prompts through algorithmic bootstrapping and evaluation against training sets.",
-        "star_framework_tip": "Explain the compilation pipeline: Signature → Bootstrap Few-Shot → Telemetry Evaluation → Optimized Teleprompter.",
-        "common_pitfalls": [
-          "Overfitting prompts to small evaluation datasets"
-        ],
-        "references": [
-          {
-            "title": "DSPy Framework Documentation",
-            "url": "https://dspy-docs.vercel.app/"
-          }
-        ]
+        "references": []
       }
     ]
   }
